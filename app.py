@@ -14,7 +14,7 @@ def index():
 def roll_dice():
     flag_enabled = get_single_flag("development", "can-roll-dice")
     if not flag_enabled:
-        return "You are not old enough to roll dice sir"
+        return "You are not old enough to roll dice sir or madam"
 
     response = "You are allowed to play and rolled a {0}".format(do_roll())
     return response
